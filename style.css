@@ -41,20 +41,28 @@
 /* ------------------------------- 2. Typography ----------------------------------- */
 body {
     font-family:  'Roboto', sans-serif;
-    width: 1200px;
+    background-color: white;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: "Merriweather", serif ;
 }
-/* ------------------------------- 3. Layout --------------------------------------- */
+/* ------------------------------- 3. Layout header --------------------------------------- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 .header-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
     border: 2px solid black;
+    padding: 80px 40px;
+    position: relative;
+    background-color: var(--paars);
 }
 
 .nav-bar {
@@ -62,23 +70,92 @@ h1, h2, h3, h4, h5 {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    margin: 20px;
-    border: 2px dashed #ff0000;
+    /*outline: #5722CD 1px solid;*/
+    width: 100%;
+    padding:50px 0;
+    color: white;
 }
 
+ul {
+    /*outline: green 1px solid;*/
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+
+}
+
+li {
+    /*outline: #ED4385  1px solid  ;*/
+}
 .header-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border: 2px dashed #00ff00;
+    color: white;
+}
+
+.header-text h1 {
+    text-align:  center;
+    padding-bottom: 12px;
+    font-size: 18px;
+    fonts-weight: normal;
 }
 
 .header-wave {
-    background-image: url("./assets/wave.jpg";
+    background-image: url("assets/squiggle_line.svg");
+    background-repeat: no-repeat;
+    height: 10px;
+    background-size:  cover;
+    background-position: bottom center;
+    padding: 0 120px;
+    position: absolute;
+
 }
 
-/* --------------- 3.1 Reusables ----------------------- */
+.cta-button {
+    background-color: var(--roze);
+    color: white;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration-line:  none;
+    text-transform: uppercase;
+}
 
+.cta-button:hover {
+    background-color: var(--paars);
+}
+/* --------------- 3.1 Layout Hello ----------------------- */
+.hello-container {
+    color: var(--paars);
+    text-align:  center;
+    padding: 80px 20px;
+    background-color: white;
+}
+
+.hello-container h2 {
+    margin-bottom: 24px;
+    font-size: 10px;
+}
+
+.hello-container p {
+    margin-top: 40px;
+}
+.hello-container a {
+    color: var(--paars);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hello-container a:hover {
+    text-decoration: underline;
+}
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
