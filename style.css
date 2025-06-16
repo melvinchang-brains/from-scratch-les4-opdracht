@@ -104,7 +104,6 @@ li {
     text-align:  center;
     padding-bottom: 12px;
     font-size: 18px;
-    fonts-weight: normal;
 }
 
 .header-wave {
@@ -156,7 +155,26 @@ li {
 .hello-container a:hover {
     text-decoration: underline;
 }
-/* --------------- 3.2 Other --------------------------- */
+/* --------------- 3.2 Projecten --------------------------- */
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.article-container {
+
+}
+
+img {
+    max-width: 100%;
+}
+.img-circle {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
@@ -165,4 +183,18 @@ li {
 /* --------------- 4.2 Introduction ------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
