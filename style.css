@@ -42,6 +42,7 @@
 body {
     font-family:  'Roboto', sans-serif;
     background-color: white;
+    width: 1200px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -49,7 +50,7 @@ h1, h2, h3, h4, h5 {
 }
 /* ------------------------------- 3. Layout header --------------------------------------- */
 .container {
-    max-width: 1200px;
+    /*max-width: 1200px;*/
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -159,16 +160,66 @@ li {
 .projects-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    max-width: 100%;
+    margin: 50px 0;
 }
-.article-container {
 
+.article-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px dashed #00ff00;
+    max-width: 80%;
+    margin:20px 0;
+    padding-right:20px;
+    gap:60px;
+
+}
+.article-container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: flex-center;*/
+    gap: 24px;
+    margin-left: 60px;
+}
+
+.header-wave {
+    background-image: url("assets/squiggle_line.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 4px;
+    width: 100px;
+    margin:12px 0 30px 0;
+    background-position: left center;
+}
+.project-text h3 {
+    margin-bottom: 0;
+}
+
+.project-text p {
+    margin-top: 0;
+}
+.project-text p {
+    margin-top: 100px;
 }
 
 img {
     max-width: 100%;
 }
-.img-circle {
+.image-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-basis: 800px;
     flex-grow: 0;
     flex-shrink: 1;
@@ -176,7 +227,50 @@ img {
 
 
 
-/* ------------------------------- 4. Areas ---------------------------------------- */
+/* ------------------------------- 4. Services ---------------------------------------- */
+.services-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border: 2px solid black;
+    max-width: 80%;
+    width: 100%;
+    gap: 24px;
+    margin: 260px 0;
+    padding: 40px 0;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 2px dashed #ff0000;
+    max-width: 28%;
+    margin: 10px 0 12px 0;
+    padding: 24px;
+}
+
+.image-wrapper {
+    width:100px;
+    height:60px;
+    display:flex;
+    flex-direction: column;
+    flex-basis: 60px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content:center;
+    align-items:flex-start;
+}
+.image-wrapper img {
+    display:block;
+    height: auto;
+    max-width: 100%;
+}
+
 
 /* --------------- 4.1 Header ------------------------- */
 
